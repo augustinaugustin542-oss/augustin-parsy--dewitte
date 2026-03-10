@@ -1,0 +1,73 @@
+iframe {
+	 
+	 height:100vh;
+	 width:100%;
+ } 
+body {
+	background-color: #E8DADA;
+	font-family: Calibri, sans-serif;
+	font-size: 16px;
+	color: #2B1B1B;
+}
+img { 
+	float: left; 
+	margin-right: 20px;
+}
+th { width: 200px;}
+ul { list-style-type: square; }
+
+#entete-de-page {
+	padding: 5px;
+	height: 100px;
+	background-color: #7A1C1C;
+	font-size: 32px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+	color: white;
+}
+#bloc-menu {
+	height: 36px;
+	background-color:#A52A2A;
+	float: center;
+	color: white;
+}
+#bloc-menu a {
+	font-family: "Palatino Linotype", serif;
+}
+#contenu {
+	padding: 10px;
+	background-color:#E8DADA;
+	font-family: Calibri, sans-serif;
+}
+#infos {
+	color: #7A1C1C;
+	font-style: italic;
+}
+#pied-de-page {
+	padding: 5px;
+	background-color: #4A0F0F;
+	font-size: 11px;
+	color: white;
+}
+/*créer des commandes pour lancer /arrêter de la musique*/
+.bouton {
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-weight: 400;
+	color:#7A1C1C;
+	font-size:4rem;
+	line-height:2em;
+}
+
+.bouton.active {
+Color:#C44D4D;
+}
+/*mettre une image aux bords arrondis*/
+
+.arrondie {
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}

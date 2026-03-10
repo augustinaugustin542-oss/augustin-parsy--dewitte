@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Site de Augustin </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> site de Augustin <br/> </p>
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th><a href="index.html"> Accueil </a></th>
+		<th><a href="productions.html">Productions scolaires</a></th>
+		<th><a href="passions.html">Mes passions</a></th>
+		<th><a href="Videos.html">Mes vidéos</a></th>
+		<th><a href="Site.html">Mon site de rêve</a></th>
+		
+		
+	</tr>
+	</table> <br/> 
+	
+	<div id="contenu">
+		<h1> Accueil </h1>
+		<img src="avatar.png" alt="mon avatar" width="10%" height="10%" class="arrondie"
+		<h2>Je me présente : je m'appelle Augustin Parsy-Dewitte. 
+Je suis élève en seconde 7 et je suis né le 10 décembre 2009. 
+Sur ce site, je vais vous présenter mes passions, notamment les jeux vidéos et les voyages. 
+Je vous présenterai également mes travaux de groupes ainsi que des vidéos pour illustrer mes activités préférées, comme les jeux de type Dark Souls et Monster Hunter. </h2>
+<br/>
+		<div><!--on ajoute le lien où se trouve la musique -->
+<audio  id="zic"src="music.mp3"></audio>
+<!--on nomme les boutons et leur statut -->
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+</div>
+<!--on écrit les variable du script -->
+<script>
+<!--on attribue valeur et fonction de chaque bouton -->
+function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i =0; i<boutons.length; i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0){
+audio.play();
+}
+if(x == 1){
+audio.pause();
+}
+if(x == 2){
+audio.pause();
+audio.currentTime = 0;
+}
+}
+</script><div>
+			
+		<hr>
+		<div id="infos">
+			<h3> A lire aussi: </h3>
+			<ul>
+				<li> https://mogapedia.fandom.com/fr/wiki/Monster_Hunter:_World </li>
+				<li> https://darksouls3.wiki.fextralife.com/Dark+Souls+3+Wiki </li>
+			</ul>
+		</div>
+	</div> <br/> 
+	
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : 15/12/2025 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Augustin Parsy--Dewitte  </p>
+	</div> <br/> 
+
+</body>
+
+</html>
